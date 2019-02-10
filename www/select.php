@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "myDB";
+$dbname = "mydb";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -11,7 +11,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT id, data1 FROM myData";
+$sql = "SELECT id, data1 FROM mydata";
 $result = $conn->query($sql);
 
 $i = "";
